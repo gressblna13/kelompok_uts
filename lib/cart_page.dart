@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'models/product.dart';
 import 'cart.dart'; // Import class Cart yang sudah kita buat
 
@@ -7,11 +6,6 @@ class CartPage extends StatelessWidget {
   final Cart cart;
 
   const CartPage({Key? key, required this.cart}) : super(key: key);
-=======
-
-class CartPage extends StatelessWidget {
-  const CartPage({Key? key}) : super(key: key);
->>>>>>> 9c964edd192e8a23aa1a4fa6aa13e9a663fc7900
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +13,8 @@ class CartPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Keranjang Belanja'),
       ),
-<<<<<<< HEAD
       body: cart.items.isEmpty
           ? Center(
-=======
-      body: Center(
->>>>>>> 9c964edd192e8a23aa1a4fa6aa13e9a663fc7900
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
@@ -32,7 +22,6 @@ class CartPage extends StatelessWidget {
             Text('Keranjang Belanja Anda Kosong', style: TextStyle(fontSize: 20)),
           ],
         ),
-<<<<<<< HEAD
       )
           : ListView.builder(
         itemCount: cart.items.length,
@@ -101,9 +90,6 @@ class CartPage extends StatelessWidget {
         ),
       )
           : null,
-=======
-      ),
->>>>>>> 9c964edd192e8a23aa1a4fa6aa13e9a663fc7900
     );
   }
 }
